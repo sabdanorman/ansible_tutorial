@@ -1,0 +1,10 @@
+apache_package_name: apache2
+apache_service: apache2
+php_package_name: libapache2-mod-php
+nginx_name: nginx
+whoopsie_name: whoopsie
+anacron_name: anacron
+smbd_name: smbd
+ufw_name: ufw
+sendmail_service: sendmail
+udev_service: udev

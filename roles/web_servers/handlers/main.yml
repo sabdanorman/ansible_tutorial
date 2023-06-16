@@ -1,0 +1,9 @@
+- name: restart_apache
+  service:
+    name: "{{ apache_service }}"
+    state: restarted
+
+- name: install_sendmail
+  package:
+    name: "{{ sendmail_service }}"
+    state: latest
