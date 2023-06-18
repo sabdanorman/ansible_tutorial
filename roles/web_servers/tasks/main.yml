@@ -7,7 +7,6 @@
       - "{{ nginx_name }}"
       - "{{ whoopsie_name }}"
       - "{{ ufw_name }}"
-      - "{{ uuid_name }}"
     state: latest
 
 - name: install udev

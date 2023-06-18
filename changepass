@@ -1,0 +1,31 @@
+rootuid=0
+e_wrong_user=65
+e_nosuch_user=70
+success=0
+
+if [ "$UID" -ne "$rootuid" ]
+then
+        echo; echo "only root can run this script."; echo
+        exit $e_wrong_user
+else
+        echo
+        echo "You should know this just run in root"
+        echo "even root user get the blues"
+        echo
+fi
+
+username=simone
+newpassword=haloibuk
+
+grep $username /etc/passwd
+if [ $? -ne $success ]; then
+        echo "User $username does not exist"
+        echo "No password changed"
+        exit $e_nosuchuser
+fi
+
+echo "$newpassword" | passwd --stdin "$username"
+
+echo; echo "User  $username's password changed!"
+
+exit 0

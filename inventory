@@ -8,4 +8,4 @@
 192.168.56.1
 
 [workstations]
-10.0.2.15
+10.0.2.15 ansible_ssh_transfer_method=scp

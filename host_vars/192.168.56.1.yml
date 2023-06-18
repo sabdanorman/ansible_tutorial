@@ -8,3 +8,5 @@ smbd_name: smbd
 ufw_name: ufw
 sendmail_service: sendmail
 udev_service: udev
+ssh_users: "sabda simone"
+ssh_template_file: sshd_config_ubuntu.j2 
